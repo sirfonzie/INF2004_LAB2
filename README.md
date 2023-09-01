@@ -4,23 +4,29 @@
 - To setup a new blank project.
 - To better understand and use library functions.
 - Configuring GPIO as input and output
-- COnfiguring UART communication.
+- Configuring UART communication.
 
 **EQUIPMENT** 
 1.	A laptop that has the Pico C/C++ SDK installed
-2.	Raspberry Pico or the wireless variant
-3.	Micro-USB Cable 
+2.	Raspberry Pico W
+3.	Micro-USB Cable
+4.	F-F Jumper wire (at least 1)
 
 > [NOTE]
-> Only students wearing fully covered shoes are allowed in the lab due to safety. 
+> Only students wearing fully covered shoes are allowed in the SR6A lab due to safety.
 
 ## **INTRODUCTION** 
 
-In this lab, our primary focus will be on the General Purpose Input/Output (GPIO) capabilities of the Raspberry Pi Pico. GPIO allows us to interact with various external components, such as LEDs, buttons, and sensors, by setting pins as __inputs__ or __outputs__ to read or write values to them. It's the foundational building block for many microcontroller-based projects. We will then delve into Serial Communication, an essential communication protocol that aids in the seamless transfer of data between the Pico and external devices. 
+In this lab, our primary focus will be on the General Purpose Input/Output (GPIO) capabilities of the Raspberry Pi Pico. GPIO allows us to interact with various external components, such as LEDs, buttons, and sensors, by setting pins as __inputs__ or __outputs__ to read or write values to them. It's the foundational building block for many microcontroller-based projects. We touch upon Direct Register Accessto appreciate its role in granular control of the Pico's hardware, allowing us to work with specific storage locations within the microcontroller. We will then delve into Serial Communication, an essential communication protocol that aids in the seamless transfer of data between the Pico and external devices. With these topics, we'll embark on a hands-on exploration to deepen our understanding of the Pico C SDK's capabilities. Let's begin our journey!
 
-To supplement our understanding, we'll also touch upon Direct Register Access. While not our main focus, appreciating its role is valuable. It allows for granular control of the Pico's hardware, granting us the ability to work with specific storage locations within the microcontroller. This interaction aids in efficiently configuring and managing its peripherals.
+## **A BLANK PROJECT** 
 
-With these topics at hand, we'll embark on a hands-on exploration to deepen our understanding of the Pico C SDK's capabilities. Let's begin our journey!
+How do we get a blank project...
+
+
+## **DEFINES, MACROS and IN-LINE FUNCTIONS** 
+
+Preprocessor directives like defines and macros, and in-line functions are often used when programming embedded systems to make the code more readable and easier to maintain.  Examples of a define, macro and in-line function are given in Code Snippet 2, 3 and 4. The #define directive, used for defines and macros, is a preprocessor directive that instructs the compiler to replace certain code parts as defined. In contrast to that, the in-line function is just a request to the compiler. This means, depending on the optimisation configuration of the compiler, function calls to in-line functions can be replaced with the function body or are treated like standard function calls. However, in contrast to macros, in-line functions are subject to strict parameter checking and considered safer.
 
 ## **GPIO** 
 
