@@ -1,16 +1,16 @@
 # LAB 2: GPIO and Digital Communication
 
 **OBJECTIVES**
-- To setup a new blank project.
 - To better understand and use library functions.
 - Configuring GPIO as input and output
 - Configuring UART communication.
+- To setup a new blank project.
 
 **EQUIPMENT** 
 1.	A laptop that has the Pico C/C++ SDK installed
 2.	Raspberry Pico W
 3.	Micro-USB Cable
-4.	F-F Jumper wire (at least 1)
+4.	F-F Jumper wire (at least 3)
 
 > [NOTE]
 > Only students wearing fully covered shoes are allowed in the SR6A lab due to safety.
