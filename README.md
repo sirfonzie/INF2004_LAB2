@@ -25,6 +25,28 @@ Go ahead and create a directory to house your new project. As in the previous ta
 
 ![Screenshot of New Folder](img/new_folder.png)
 
+![Screenshot of create_folder](img/create_folder.png)
+
+Add a C file with the name uart_rx.c
+
+![Screenshot of add_cfile](img/add_cfile.png)
+
+Add a text file with the name "CMakeLists.txt". Ensure the filename is correct. A mistake here will lead to errors.
+
+![Screenshot of add_CMakeLists](img/add_CMakeLists.png)
+
+Go to uart's folder CMakeLists.txt (see below) and include the "add_subdirectory(uart_rx)" into the file in line #5.
+
+![Screenshot of update_main_CMakeLists](img/update_main_CMakeLists.png)
+
+Once you have saved this CMakeList.txt file, it will configure the project and create the build folder.
+
+![Screenshot of wait](img/wait.png)
+
+![Screenshot of build_folder_magically_created](img/build_folder_magically_created.png)
+
+Now, you can go to CMake tool and build your new project.
+![Screenshot of goto_CMake](img/goto_CMake.png)
 
 ## **DEFINES, MACROS and IN-LINE FUNCTIONS** 
 
