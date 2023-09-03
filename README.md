@@ -25,8 +25,11 @@ Preprocessor directives like defines and macros, and in-line functions are often
 
 ## **GPIO** 
 
-SAD
+We will be building the [blink](https://github.com/raspberrypi/pico-examples/blob/master/pico_w/wifi/blink/picow_blink.c) sample code for the Pico W. This time we have a better understanding of what GPIO is and what we need to do to configure an LED. Unfortunately, the button on the Pico cannot be used by the user. Therefore, we will create a pseudo-button where we will configure the GPIO as input and connect it to 3.3v or GND to simulate on and off.
 
+This modified code, [picow_blink_button](picow_blink_button.c), configures the GP14 as an input with a pull-up resistor. What this means is that when the button is not pressed (disconnected), it will have a high state. To activate (aka pressing) this pseudo-button, you connect it to low (or GND). Connecting the GP14 to GND will cause the LED to stop blinking. While disconnecting the wire will allow the LED to continue to blink.
+
+If the pseudo-button is supposed to be active-high (connect to 3.3V to activate the button), then the GPIO pin needs to be configured to a pull-down resistor.
 
 ## **SERIAL COMMUNICATIONS**
 
