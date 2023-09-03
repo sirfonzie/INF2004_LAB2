@@ -21,7 +21,13 @@ In this lab, our primary focus will be on the General Purpose Input/Output (GPIO
 
 ## **DEFINES, MACROS and IN-LINE FUNCTIONS** 
 
-Preprocessor directives like defines and macros, and in-line functions are often used when programming embedded systems to make the code more readable and easier to maintain.  Examples of a define, macro and in-line function are given in Code Snippet 2, 3 and 4. The #define directive, used for defines and macros, is a preprocessor directive that instructs the compiler to replace certain code parts as defined. In contrast to that, the in-line function is just a request to the compiler. This means, depending on the optimisation configuration of the compiler, function calls to in-line functions can be replaced with the function body or are treated like standard function calls. However, in contrast to macros, in-line functions are subject to strict parameter checking and considered safer.
+Preprocessor directives like defines and macros are often used when programming embedded systems to make the code more readable and easier to maintain.  In C programming, #define is a preprocessor directive used to create "macros." While they're often discussed interchangeably, #define is the mechanism, and the macro is the result. Macros can represent values or pieces of code and are a form of text substitution done __before compilation__. They're not true functions or variables, so they don't have types or memory allocations. Though they can make code more efficient, they might also introduce complexity or errors if not used cautiously.
+
+```
+#define PI 3.14159
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
+```
+In the above example, PI is a simple macro representing the value 3.14159, and MIN is a macro that computes the minimum of two values.
 
 ## **GPIO** 
 
