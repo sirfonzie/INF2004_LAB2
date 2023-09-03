@@ -41,6 +41,9 @@ If the pseudo-button is supposed to be active-high (connect to 3.3V to activate 
 
 In this task, you will need to work in a pair. Person A will be building the sample code for [hello_uart](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c) that would send char data via the serial pins (not USB cable). While Person B will compile [uart_rx](uart_rx.c) using a new project that is shown in the next section. Remember to make sure the Pico_A GP0 will connect to Pico_B GP1 and vice-versa. Do include a while-loop so that the sender (Pico A) will continuously send the characters.
 
+The image below illustrates how to connect the two Pico W together via the UART. Take note that the cables are swapped. In addition, GP14 is connected to GND only when you need to activate the button.
+![Screenshot of Connecting 2 Pico W Together](picow2picow_uart.png)
+
 ## **Creating your own Project (in VSC)** 
 
 Go ahead and create a directory to house your new project. As in the previous task, we compiled a pico example project called (hello_uart)[] that will send three characters (one at a time) via the UART_TX located on pin 0 on the Raspberry Pi Pico.  In this task, we shall create a folder (under Explorer) within the UART as shown below.
