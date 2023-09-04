@@ -44,7 +44,7 @@ In this task, you will need to work in a pair. Person A will be building the sam
 
 ## **Creating your own Project (in VSC)** 
 
-Go ahead and create a directory to house your new project. As in the previous task, we compiled a pico example project called (hello_uart)[] that will send three characters (one at a time) via the UART_TX located on pin 0 on the Raspberry Pi Pico.  In this task, we shall create a folder (under Explorer) within the UART as shown below.
+Go ahead and create a directory to house your new project. As in the previous task, we compiled a pico example project called [hello_uart](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c) that will send three characters (one at a time) via the UART_TX located on pin 0 on the Raspberry Pi Pico.  In this task, we shall create a folder (under Explorer) within the UART as shown below.
 
 ![Screenshot of New Folder](img/new_folder.png)
 
@@ -54,7 +54,7 @@ Add a C file with the name uart_rx.c
 
 ![Screenshot of add_cfile](img/add_cfile.png)
 
-Add a text file with the name "CMakeLists.txt". Ensure the filename is correct. A mistake here will lead to errors.
+Add a text file with the name ["CMakeLists.txt"](CMakeLists.txt). Ensure the filename is correct. A mistake here will lead to errors.
 
 ![Screenshot of add_CMakeLists](img/add_CMakeLists.png)
 
