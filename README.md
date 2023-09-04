@@ -78,3 +78,4 @@ The application is to utilize UART communication through GP16 and GP17 (UART0) f
 > [!IMPORTANT]
 > GP16 & GP17 are connected with a jumper wire.
 
+![Screenshot of New Folder](img/ex2.png)
