@@ -37,6 +37,16 @@ This modified code, [picow_blink_button](picow_blink_button.c), configures the G
 
 If the pseudo-button is supposed to be active-high (connect to 3.3V to activate the button), then the GPIO pin needs to be configured to a pull-down resistor.
 
+The images below illustrate how a pull-up and pull-down configuration would be used as a pseudo-button on the Raspberry Pi Pico W.
+
+![Screenshot of Pull-up NOT Pressed](img/pullup_notpress.png)
+
+![Screenshot of Pull-up Pressed](img/pullup_press.png)
+
+![Screenshot of Pull-down NOT Pressed](img/pulldown_notpress.png)
+
+![Screenshot of Pull-down Pressed](img/pulldown_press.png)
+
 ## **SERIAL COMMUNICATIONS**
 
 In this task, you will need to work in a pair. Person A will be building the sample code for [hello_uart](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c) that would send char data via the serial pins (not USB cable). While Person B will compile [uart_rx](uart_rx.c) using a new project that is shown in the next section. Remember to make sure the Pico_A GP0 will connect to Pico_B GP1 and vice-versa. Do include a while-loop so that the sender (Pico A) will continuously send the characters. The image below illustrates how to connect the two Pico W together via the UART. Take note that the cables are swapped. 
