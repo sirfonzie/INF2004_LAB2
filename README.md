@@ -89,3 +89,5 @@ The application is to utilize UART communication through GP16 and GP17 (UART0) f
 > GP16 & GP17 are connected with a jumper wire.
 
 ![Screenshot of New Folder](img/ex2.png)
+
+ > [NOTE]> If you're experiencing random character outputs in your lab exercise, try replacing stdio_init_all() with stdio_usb_init(). This seems to resolve the issue. (Many Thanks for LING CHOON KEAT)
