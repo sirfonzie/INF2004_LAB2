@@ -90,4 +90,4 @@ The application is to utilize UART communication through GP16 and GP17 (UART0) f
 
 ![Screenshot of New Folder](img/ex2.png)
 
- > [NOTE]> If you're experiencing random character outputs in your lab exercise, try replacing stdio_init_all() with stdio_usb_init(). This seems to resolve the issue. (Many Thanks for LING CHOON KEAT)
+ > [NOTE]> If you're experiencing random character outputs in your lab exercise, try replacing stdio_init_all() with stdio_usb_init(). This seems to resolve the issue. (Many thanks to LING CHOON KEAT)
