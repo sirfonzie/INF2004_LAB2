@@ -85,8 +85,19 @@ Now, you can go to CMake tool and build your new project.
 > [NOTE]> There is an error in the screenshot above. Do use the correct [CMakeLists.txt](CMakeLists.txt) file in the repository.
 ## **EXERCISE**
 
-The application utilises UART communication through GP8 and GP9 (UART1) for data transmission and reception. The software is equipped with conditional logic that detects the state of button GP22 and, based on its status, sends either a numeric value '1' or cycles through uppercase English alphabet characters from 'A' to 'Z' with a one-second delay in between. When button GP22 is not pressed, the software transmits the digit '1' through UART1. On the other hand, when button GP22 is pressed, the software sequentially sends uppercase alphabet characters, looping back to 'A' after 'Z'. For data reception, the software employs the UART1 receiver functionality. It reads incoming data and processes it accordingly. If the received data is an uppercase alphabet character, the software performs an arithmetic transformation to convert it into lowercase. Subsequently, the converted character is displayed on the standard serial terminal output. However, if the received data is '1', it will print out the number '2'. 
+The application uses UART communication via GPIO pins GP8 (TX) and GP9 (RX) on UART1 for data transmission and reception. It also includes conditional logic based on the state of button GP22. The functionality can be explained as follows:
 
+When button GP22 is **not pressed**: The software sends the numeric value '1' through UART1 every 1 second.
+
+When button GP22 is **pressed**: The software transmits uppercase English alphabet characters sequentially, starting from 'A' to 'Z', with a 1-second delay between each character. After reaching 'Z', it loops back to 'A'. For example, if GP22 is pressed, the output would be 'A', then 'B', and so on, with a new letter sent every 1 second.
+
+For data reception, the software utilizes the UART1 receiver. When it reads incoming data (see Note #1):
+
+If the data is an uppercase alphabet character (e.g., 'A', 'B'), the software converts it to the corresponding lowercase character (e.g., 'a', 'b'). The transformed character is then printed to the serial terminal.
+
+If the received data is '1', the software will print the number '2' instead.
 ![Screenshot of New Folder](img/ex2v2.png)
 
- > [NOTE]> If you're experiencing random character outputs in your lab exercise, try replacing stdio_init_all() with stdio_usb_init().
+ > [NOTE 1]> By connecting GP8 to GP9, we effectively create a UART loopback, meaning the transmitted data from the TX pin (GP8) is immediately received by the RX pin (GP9). This allows the Pico to both send and receive data in a self-contained loop, which is useful for testing and debugging the UART functionality.
+
+ > [NOTE 2]> If you're experiencing random character outputs in your lab exercise, try replacing stdio_init_all() with stdio_usb_init().
