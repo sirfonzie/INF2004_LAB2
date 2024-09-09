@@ -63,10 +63,6 @@ This table clearly shows the pin connections between the two Pico W boards for I
 
 > [NOTE]: You will need to edit the CMakeLists.txt file to enable the serial over the USB cable (refer to Lab 1).
 
-### **Summary**
-
-You established I2C communication on the Raspberry Pi Pico W in this lab using the provided example code. You learned how to connect the boards for I2C, compile and run the project, and observe the data exchange between master and slave devices. This exercise demonstrates how to use the Pico W for basic I2C communication, essential for interfacing with many peripherals in embedded systems projects.
-
 ---
 
 ### Part 2: SPI Communication
@@ -95,23 +91,9 @@ Connect the two Raspberry Pi Pico boards as follows:
 
 #### 2.4. Steps
 
-1. **Create the project directory**:
-   Create a folder named `spi_lab` within your project workspace.
-
-2. **Compile the SPI example**:
-   Navigate to the `pico_examples/spi/` directory. The example we will use is `spi_master_slave`. Follow these steps:
-
-   - Open a terminal in VS Code.
-   - Run the following commands to configure and build the project:
-
-   ```bash
-   mkdir build
-   cd build
-   cmake ..
-   make -j4
-   ```
-
-3. **Upload the code**:
+1. **Compile the SPI example**:
+   Navigate to the `pico_examples/spi/` directory. The examples we will use are 'spi_master' and 'spi_slave' under `spi_master_slave`.
+2. **Upload the code**:
    - Flash the `spi_master` example to **Pico A** (Master).
    - Flash the `spi_slave` example to **Pico B** (Slave).
 
@@ -127,4 +109,8 @@ Connect the two Raspberry Pi Pico boards as follows:
 
 ### Conclusion
 
-In this lab, you have set up two Raspberry Pi Pico boards to communicate using both I2C and SPI protocols. You have compiled the example codes, connected the boards, and observed how data is transmitted and received. These communication protocols are essential for interfacing various peripherals in embedded systems and will be helpful in many future projects.
+In this lab, we successfully implemented and demonstrated I2C and SPI communication protocols on Raspberry Pi Pico W boards. Through hands-on experience, we established I2C communication between two Pico W I2C communication modules, where the master initiated data transfers to the slave, and the slave responded accordingly. The I2C loopback test provided an example of debugging and testing I2C protocol.
+
+Similarly, we explored SPI communication by configuring one Pico as the master and another as the slave. This exercise showcased the full-duplex nature of SPI, where both devices exchanged data simultaneously over separate data lines. The faster speed and direct data lines of SPI make it ideal for high-throughput applications, as seen in this test scenario.
+
+Overall, this lab demonstrated the practical differences between I2C and SPI, highlighting the strengths of each protocol for different embedded system applications. These exercises helped reinforce key concepts such as synchronous communication, pin configuration, and data exchange mechanisms, providing a solid foundation for future projects involving these protocols.
