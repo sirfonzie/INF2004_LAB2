@@ -4,16 +4,17 @@
 - To better understand and use library functions.
 - Configuring GPIO as input and output
 - Configuring UART communication.
+- Compiling I2C and SPI examples.
 - To setup a new blank project.
 
 **EQUIPMENT** 
 1.	A laptop that has the Pico C/C++ SDK installed
 2.	Raspberry Pico W
 3.	Micro-USB Cable
-4.	F-F Jumper wire (at least 3)
+4.	1x Male-Male Jumper wire
 
 > [NOTE]
-> Only students wearing fully covered shoes are allowed in the SR6A lab due to safety.
+> Only students wearing fully covered shoes and long pants are allowed in the lab for safety reasons.
 
 ## **INTRODUCTION** 
 
