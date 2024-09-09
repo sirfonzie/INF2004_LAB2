@@ -64,7 +64,9 @@ Please ensure that **Pico A** includes a while-loop so the sender continuously t
 
 ## **Creating your own Project (in VSC)** 
 
-Go ahead and create a directory to house your new project. As in the previous task, we compiled a pico example project called [hello_uart](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c) that will send three characters (one at a time) via the UART_TX located on pin 0 on the Raspberry Pi Pico.  In this task, we shall create a folder (under Explorer) within the UART as shown below.
+Creating your own project folder in VSCode helps keep your code organized and makes it easier to manage multiple files, especially in larger projects. By having a dedicated folder for each project, you can neatly separate different sets of code, configurations, and resources, preventing clutter. This makes it easier to navigate your project, track changes, and share it with others. Additionally, VSCode uses this structure to recognize your project environment, allowing it to handle tasks like compiling, debugging, and version control more effectively. It also keeps your workspace clean and ensures that your projects don’t interfere with each other.
+
+Go ahead and create a directory to house your new project. As in the previous task, we compiled a pico example project called [hello_uart](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c) that will send three characters (one at a time) via the UART_TX located on GP0 on the Raspberry Pi Pico.  In this task, we shall create a folder (under Explorer) within the UART as shown below.
 
 ![Screenshot of New Folder](img/new_folder.png)
 
