@@ -29,7 +29,7 @@ Preprocessor directives like defines and macros are often used when programming 
 ```
 In the above example, PI is a simple macro representing the value 3.14159, and MIN is a macro that computes the minimum of two values.
 
-## **GPIO** 
+## **GPIO - INPUT** 
 
 We will be building the [blink](https://github.com/raspberrypi/pico-examples/blob/master/pico_w/wifi/blink/picow_blink.c) sample code for the Pico W. This time, we have a better understanding of GPIO and what we need to do to configure an LED. Unfortunately, the user cannot use the button on the Pico W (its for boot select only). Now that we are using the Pico W together with the Maker board, we have access to three buttons. In this example, we will demonstrate how to use a button connected to GP20. These buttons are connected via a pull-up circuit, so they need to be configured accordingly.
 
@@ -42,6 +42,12 @@ The images below illustrate how a pull-up configuration would be used as a GP20 
 ![Screenshot of Pull-up NOT Pressed](img/pullup_notpress2.png)
 
 ![Screenshot of Pull-up Pressed](img/pullup_press2.png)
+
+## **GPIO - OUTPUT** 
+
+This [code](signal.c)) demonstrates how to generate a custom signal using a GPIO pin on a Raspberry Pi Pico. The GPIO pin connected to an LED is programmed to create a bespoke signal by turning the LED on for 1 second (representing a "high" signal) and then turning it off for 2 seconds (representing a "low" signal).
+
+
 
 ## **SERIAL COMMUNICATIONS**
 
