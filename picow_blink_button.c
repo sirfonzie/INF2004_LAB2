@@ -7,7 +7,7 @@
 #include "pico/stdlib.h"
 #include "pico/cyw43_arch.h"
 
-const uint BTN_PIN = 14;
+const uint BTN_PIN = 20;
 
 int main() {
     stdio_init_all();
