@@ -62,7 +62,7 @@ Please ensure that **Pico A** includes a while-loop so the sender continuously t
 
 > [NOTE]: The key difference between `hello_usb` and `hello_uart` in the Pico examples is that `hello_usb` sends output through the USB interface, displaying messages on the connected computer's terminal, while `hello_uart` transmits data via the UART pins (TX/RX), allowing communication with other devices over a serial connection.
 
-> [NOTE]:  Guide on how to connect, compile and execute the examples for I2C and SPI can be found [here](digcomms).
+> [NOTE]:  Guide on how to connect, compile and execute the examples for I2C and SPI can be found [here](digcomms.md).
 
 ## **Creating your own Project (in VSC)** 
 
