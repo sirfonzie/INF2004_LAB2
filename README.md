@@ -60,7 +60,7 @@ Ground (GND) connection: Both Pico W boards must share a common ground (**GND**)
 Please ensure that **Pico A** includes a while-loop so the sender continuously transmits characters to **Pico B**. The image below illustrates the correct wiring setup for connecting the two Pico W boards via UART, showing the TX and RX cables swapped between the boards.
 ![Screenshot of Connecting 2 Pico W Together](img/p2puart.png)
 
-> [NOTE]: The key difference between`hello_usb` and `hello_uart` in the Pico examples is that hello_usb sends output through the USB interface, displaying messages on the connected computer's terminal, while hello_uart transmits data via the UART pins (TX/RX), allowing communication with other devices over a serial connection.
+> [NOTE]: The key difference between `hello_usb` and `hello_uart` in the Pico examples is that `hello_usb` sends output through the USB interface, displaying messages on the connected computer's terminal, while `hello_uart` transmits data via the UART pins (TX/RX), allowing communication with other devices over a serial connection.
 
 ## **Creating your own Project (in VSC)** 
 
