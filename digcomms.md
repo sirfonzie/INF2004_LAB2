@@ -61,7 +61,7 @@ This table clearly shows the pin connections between the two Pico W boards for I
     Read  at 0xXX: 'I2C slave! - 0xXX'
     ```
 
-> [NOTE]: You will need to edit the CMakeLists.txt file to enable the serial over the USB cable (refer to Lab 1).
+> [NOTE]: You will need to edit the CMakeLists.txt file to enable the serial over the USB cable (refer to Lab 2 - Serial Communications UART).
 
 ---
 
