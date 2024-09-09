@@ -53,11 +53,11 @@ This [code](pulse.c) demonstrates generating a custom signal using a GPIO pin on
 
 In this task, you will work in pairs. Pico A will compile and run the sample code for [hello_uart](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c), which will send character data via the serial pins (instead of the USB cable). As explained in the next section, Pico B will compile and run [uart_rx](uart_rx.c) using a new project.
 
-To successfully exchange data between the two Pico W boards, it is essential to connect Pico A's GP0 (TX) to Pico B's GP1 (RX), and vice-versa. Here's why:
-- Connecting GP0 of Pico A to GP1 of Pico B: GP0 on Pico A is configured as the transmit pin (TX), which sends data. GP1 on Pico B is configured as the receive pin (RX), which listens for incoming data. Pico A can send data that Pico B will receive by connecting them. Additionally, you should connect Pico B's GP0 (TX) to Pico A's GP1 (RX), allowing data transmission in both directions (if needed).
-Ground (GND) connection: Both Pico W boards must share a common ground (GND) to establish a reliable electrical connection. Without connecting the GNDs of both boards, the voltage levels may be inconsistent, potentially causing communication issues or data corruption. By linking the grounds, you ensure both boards have the same reference point for voltage, enabling stable and correct data transmission.
+To successfully exchange data between the two Pico W boards, it is essential to connect **Pico A**'s GP0 (TX) to **Pico B**'s GP1 (RX), and vice-versa. Here's why:
+- Connecting GP0 of **Pico A** to GP1 of **Pico B**: GP0 on Pico A is configured as the transmit pin (TX), which sends data. GP1 on **Pico B** is configured as the receive pin (RX), which listens for incoming data. **Pico A** can send data that **Pico B** will receive by connecting them. Additionally, you should connect **Pico B**'s GP0 (TX) to **Pico A**'s GP1 (RX), allowing data transmission in both directions (if needed).
+Ground (GND) connection: Both Pico W boards must share a common ground (**GND**) to establish a reliable electrical connection. Without connecting the GNDs of both boards, the voltage levels may be inconsistent, potentially causing communication issues or data corruption. By linking the grounds, you ensure both boards have the same reference point for voltage, enabling stable and correct data transmission.
 
-Please ensure that Pico A includes a while-loop so the sender continuously transmits characters to Pico B. The image below illustrates the correct wiring setup for connecting the two Pico W boards via UART, showing the TX and RX cables swapped between the boards.
+Please ensure that **Pico A** includes a while-loop so the sender continuously transmits characters to **Pico B**. The image below illustrates the correct wiring setup for connecting the two Pico W boards via UART, showing the TX and RX cables swapped between the boards.
 ![Screenshot of Connecting 2 Pico W Together](img/p2puart.png)
 
 ## **Creating your own Project (in VSC)** 
