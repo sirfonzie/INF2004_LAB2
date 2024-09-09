@@ -45,7 +45,7 @@ The images below illustrate how a pull-up configuration would be used as a GP20 
 
 ## **GPIO - OUTPUT** 
 
-This [code](pulse.c)) demonstrates how to generate a custom signal using a GPIO pin on a Raspberry Pi Pico. The GPIO pin connected to an LED is programmed to create a bespoke signal by turning the LED on for 1 second (representing a "high" signal) and then turning it off for 2 seconds (representing a "low" signal).
+This [code](pulse.c) demonstrates generating a custom signal using a GPIO pin on a Raspberry Pi Pico. The GPIO pin connected to an LED is programmed to create a bespoke pulse by turning the LED on for 1 second (representing a "high" signal) and then turning it off for 2 seconds (representing a "low" signal). This is then repeated using the while loop. Various pulses can be generates using this method.
 
 
 
