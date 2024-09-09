@@ -43,9 +43,8 @@ The images below illustrate how a pull-up and pull-down configuration would be u
 
 ![Screenshot of Pull-up Pressed](img/pullup_press2.png)
 
-#![Screenshot of Pull-down NOT Pressed](img/pulldown_notpress.png)
-
-#![Screenshot of Pull-down Pressed](img/pulldown_press.png)
+##![Screenshot of Pull-down NOT Pressed](img/pulldown_notpress.png)
+##![Screenshot of Pull-down Pressed](img/pulldown_press.png)
 
 ## **SERIAL COMMUNICATIONS**
 
