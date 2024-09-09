@@ -17,7 +17,18 @@
 
 ## **INTRODUCTION** 
 
-In this lab, our primary focus will be on the General Purpose Input/Output (GPIO) capabilities of the Raspberry Pi Pico. GPIO allows us to interact with various external components, such as LEDs, buttons, and sensors, by setting pins as __inputs__ or __outputs__ to read or write values to them. It's the foundational building block for many microcontroller-based projects. We will delve into Serial Communication, an essential communication protocol that aids in the seamless transfer of data between Picos. With these topics, we'll embark on a hands-on exploration to deepen our understanding of the Pico C SDK's capabilities including creating your own project from blank. Let's begin our journey!
+In this lab, we will dive into the **General Purpose Input/Output (GPIO)** capabilities of the Raspberry Pi **Pico W**, which are the foundation for interacting with external components such as LEDs, buttons, and sensors. GPIO pins can be configured as inputs or outputs, allowing the Raspberry Pi Pico W to read data from sensors or control devices like motors and displays. These pins are the backbone of many microcontroller-based projects, enabling developers to create various embedded systems applications.
+
+However, the Pico W's GPIO pins are more than simple input/output points. Each pin on the Pico W is **multiplexed**, meaning it can serve multiple functions—such as **UART, SPI, I2C**, or **PWM**—depending on how the pin is configured in your code. For example, a single pin could be used for UART communication in one project and SPI communication in another. Because of this flexibility, developers must carefully plan and decide which GPIO pins to use for each function before starting their project. Improper pin assignments could lead to conflicts, making certain peripherals unusable or causing unexpected behaviour.
+
+In this lab, we will also explore **Serial Communication**, an essential protocol that enables the efficient transfer of data between two Pico W boards (or other devices) over a wired connection. Specifically, we will focus on the **UART** (Universal Asynchronous Receiver-Transmitter), **I2C**, and **SPI** protocols, each serving different use cases depending on the type of data transfer required. For example, SPI is commonly used for high-speed communication with sensors or displays, while I2C is great for communicating with multiple devices using fewer wires.
+
+In addition to learning about GPIO and serial communication, you'll have the opportunity to create a project from scratch using the **Pico C SDK**. You'll experience hands-on coding, compiling, and deploying a project while gaining insight into the flexibility of the Pico W's architecture.
+
+Through this lab, you’ll enhance your practical skills and develop a deeper understanding of how to plan, configure, and utilize the versatile GPIO and communication features of the Raspberry Pi Pico W.
+
+Let’s begin our journey into embedded systems and serial communication with the Raspberry Pi Pico W!
+
 
 ## **DEFINES and MACROS** 
 
