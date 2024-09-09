@@ -31,20 +31,17 @@ In the above example, PI is a simple macro representing the value 3.14159, and M
 
 ## **GPIO** 
 
-We will be building the [blink](https://github.com/raspberrypi/pico-examples/blob/master/pico_w/wifi/blink/picow_blink.c) sample code for the Pico W. This time we have a better understanding of what GPIO is and what we need to do to configure an LED. Unfortunately, the button on the Pico cannot be used by the user. Therefore, we will create a pseudo-button where we will configure the GPIO as input and connect it to 3.3v or GND to simulate on and off.
+We will be building the [blink](https://github.com/raspberrypi/pico-examples/blob/master/pico_w/wifi/blink/picow_blink.c) sample code for the Pico W. This time, we have a better understanding of GPIO and what we need to do to configure an LED. Unfortunately, the user cannot use the button on the Pico W (its for boot select only). Now that we are using the Pico W together with the Maker board, we have access to three buttons. In this example, we will demonstrate how to use a button connected to GP20. These buttons are connected via a pull-up circuit, so they need to be configured accordingly.
 
-This modified code, [picow_blink_button](picow_blink_button.c), configures the GP14 as an input with a pull-up resistor. What this means is that when the button is not pressed (disconnected), it will have a high state. To activate (aka pressing) this pseudo-button, you connect it to low (or GND). Connecting the GP14 to GND will cause the LED to stop blinking. While disconnecting the wire will allow the LED to continue to blink.
+The modified code, [picow_blink_button](picow_blink_button.c), configures GP20 as an input with a pull-up resistor. When the button connected to GP20 is not pressed, the pin remains in a high state. Pressing the GP20 button will pull the pin low, causing the LED to stop blinking (as defined in the code). Releasing the button returns the pin to a high state, allowing the LED to resume blinking.
 
-If the pseudo-button is supposed to be active-high (connect to 3.3V to activate the button), then the GPIO pin needs to be configured to a pull-down resistor.
+However, if the button circuitry is supposed to be active-high, then the GPIO pin must be configured to a pull-down mode.
 
-The images below illustrate how a pull-up and pull-down configuration would be used as a pseudo-button on the Raspberry Pi Pico W.
+The images below illustrate how a pull-up configuration would be used as a GP20 button on the Pico W.
 
 ![Screenshot of Pull-up NOT Pressed](img/pullup_notpress2.png)
 
 ![Screenshot of Pull-up Pressed](img/pullup_press2.png)
-
-##![Screenshot of Pull-down NOT Pressed](img/pulldown_notpress.png)
-##![Screenshot of Pull-down Pressed](img/pulldown_press.png)
 
 ## **SERIAL COMMUNICATIONS**
 
