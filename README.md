@@ -39,13 +39,13 @@ If the pseudo-button is supposed to be active-high (connect to 3.3V to activate 
 
 The images below illustrate how a pull-up and pull-down configuration would be used as a pseudo-button on the Raspberry Pi Pico W.
 
-![Screenshot of Pull-up NOT Pressed](img/pullup_notpress.png)
+![Screenshot of Pull-up NOT Pressed](img/pullup_notpress2.png)
 
-![Screenshot of Pull-up Pressed](img/pullup_press.png)
+![Screenshot of Pull-up Pressed](img/pullup_press2.png)
 
-![Screenshot of Pull-down NOT Pressed](img/pulldown_notpress.png)
+#![Screenshot of Pull-down NOT Pressed](img/pulldown_notpress.png)
 
-![Screenshot of Pull-down Pressed](img/pulldown_press.png)
+#![Screenshot of Pull-down Pressed](img/pulldown_press.png)
 
 ## **SERIAL COMMUNICATIONS**
 
