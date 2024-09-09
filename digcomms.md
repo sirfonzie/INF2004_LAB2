@@ -1,21 +1,4 @@
-### I2C and SPI Communication Between Two Raspberry Pi Pico W Boards [optional]
-
-#### Overview
-In this lab, you will set up two Raspberry Pi Pico W boards to communicate with each other using I2C and SPI protocols. You will compile the example code from the `pico_examples` repository and observe how data is transmitted and received between the two Pico boards.
-
-
-
-
-
-
-
-
-
-
-
-Here’s the updated lab manual based on the provided I2C example code for two Raspberry Pi Pico W boards.
-
-### Lab Manual: I2C Communication Between Two Raspberry Pi Pico W Boards
+### I2C and SPI Communication on Raspberry Pi Pico W [optional]
 
 #### Overview
 I2C (Inter-Integrated Circuit) and SPI (Serial Peripheral Interface) are synchronous communication protocols commonly used in embedded systems for short-distance data transfer between a microcontroller and peripheral devices. I2C operates with two lines, SDA (Serial Data Line) and SCL (Serial Clock Line), allowing multiple devices to communicate on a shared bus through addressing. SPI, on the other hand, uses four lines: MOSI (Master Out Slave In), MISO (Master In Slave Out), SCLK (Serial Clock), and SS (Slave Select), allowing faster, full-duplex communication between a master and multiple slaves. 
