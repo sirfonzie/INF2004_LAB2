@@ -60,6 +60,8 @@ Ground (GND) connection: Both Pico W boards must share a common ground (**GND**)
 Please ensure that **Pico A** includes a while-loop so the sender continuously transmits characters to **Pico B**. The image below illustrates the correct wiring setup for connecting the two Pico W boards via UART, showing the TX and RX cables swapped between the boards.
 ![Screenshot of Connecting 2 Pico W Together](img/p2puart.png)
 
+> [NOTE]: The key difference between`hello_usb` and `hello_uart` in the Pico examples is that hello_usb sends output through the USB interface, displaying messages on the connected computer's terminal, while hello_uart transmits data via the UART pins (TX/RX), allowing communication with other devices over a serial connection.
+
 ## **Creating your own Project (in VSC)** 
 
 Go ahead and create a directory to house your new project. As in the previous task, we compiled a pico example project called [hello_uart](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c) that will send three characters (one at a time) via the UART_TX located on pin 0 on the Raspberry Pi Pico.  In this task, we shall create a folder (under Explorer) within the UART as shown below.
@@ -88,7 +90,7 @@ Once you have saved this CMakeList.txt file, it will configure the project and c
 
 Now, you can go to CMake tool and build your new project.
 ![Screenshot of goto_CMake](img/goto_CMake.png)
-> [NOTE]> There is an error in the screenshot above. Do use the correct [CMakeLists.txt](CMakeLists.txt) file in the repository.
+> [NOTE]: There is an error in the screenshot above. Do use the correct [CMakeLists.txt](CMakeLists.txt) file in the repository.
 ## **EXERCISE**
 
 The application uses UART communication via GPIO pins GP8 (TX) and GP9 (RX) on UART1 for data transmission and reception. It also includes conditional logic based on the state of button GP22. The functionality can be explained as follows:
