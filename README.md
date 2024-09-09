@@ -49,7 +49,7 @@ This [code](pulse.c) demonstrates generating a custom signal using a GPIO pin on
 
 
 
-## **SERIAL COMMUNICATIONS**
+## **SERIAL COMMUNICATIONS - UART**
 
 In this task, you will work in pairs. **Pico A** will compile and run the sample code for [hello_uart](https://github.com/raspberrypi/pico-examples/blob/master/uart/hello_uart/hello_uart.c), which will send character data via the serial pins (instead of the USB cable). While **Pico B** will compile and run [uart_rx](uart_rx.c) using a new project (see next section on how to create a new project).
 
@@ -61,6 +61,8 @@ Please ensure that **Pico A** includes a while-loop so the sender continuously t
 ![Screenshot of Connecting 2 Pico W Together](img/p2puart.png)
 
 > [NOTE]: The key difference between `hello_usb` and `hello_uart` in the Pico examples is that `hello_usb` sends output through the USB interface, displaying messages on the connected computer's terminal, while `hello_uart` transmits data via the UART pins (TX/RX), allowing communication with other devices over a serial connection.
+
+> [NOTE]:  Guide on how to connect, compile and execute the examples for I2C and SPI can be found [here](digcomms).
 
 ## **Creating your own Project (in VSC)** 
 
