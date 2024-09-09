@@ -37,6 +37,7 @@ This table clearly shows the pin connections between the two Pico W boards for I
    Make sure that the Pico SDK and `pico-examples` are properly set up on your machine. 
 2. **Compiling the code**:
    Select the I2C 'slave_mem_i2c' code provided in the example folder and build it (as shown below).
+   
 ![Screenshot of building salve_mem_i2c](img/i2cbuild.PNG)
 
 5. **Upload the code**: Upload the .UF2 file onto the Pico W.
@@ -60,12 +61,13 @@ This table clearly shows the pin connections between the two Pico W boards for I
     Read  at 0xXX: 'I2C slave! - 0xXX'
     ```
 
+> [NOTE]: You will need to edit the CMakeLists.txt file to enable the serial over the USB cable (refer to Lab 1).
+
+### **Summary**
+
+You established I2C communication on the Raspberry Pi Pico W in this lab using the provided example code. You learned how to connect the boards for I2C, compile and run the project, and observe the data exchange between master and slave devices. This exercise demonstrates how to use the Pico W for basic I2C communication, essential for interfacing with many peripherals in embedded systems projects.
+
 ---
-
-### **Conclusion**
-
-In this lab, you established I2C communication between two Raspberry Pi Pico W boards using the provided code. You learned how to wire the boards for I2C, compile and run the project, and observe the exchange of data between master and slave devices. This exercise demonstrates how to use the Pico W for basic I2C communication, which is essential for interfacing with many peripherals in embedded systems projects.
-
 
 
 
