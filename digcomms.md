@@ -37,7 +37,7 @@ This table clearly shows the pin connections between the two Pico W boards for I
    Make sure that the Pico SDK and `pico-examples` are properly set up on your machine. 
 2. **Compiling the code**:
    Select the I2C 'slave_mem_i2c' code provided in the example folder and build it (as shown below).
-![Screenshot of building salve_mem_i2c](img/i2cbuild.png)
+![Screenshot of building salve_mem_i2c](img/i2cbuild.PNG)
 
 5. **Upload the code**: Upload the .UF2 file onto the Pico W.
 6. **Run the code**:
