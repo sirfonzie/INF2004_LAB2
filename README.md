@@ -124,7 +124,7 @@ For data reception, the software utilizes the UART1 receiver. When it reads inco
  > [NOTE 2]: If you're experiencing random character outputs in your lab exercise, try replacing stdio_init_all() with stdio_usb_init().
 
 
-## Think & Try It: Bitwise LED Challenge on Pico
+## Challenge Yourself: Bitwise LED Challenge on Pico
 
 Problem:
 You have 4 LEDs connected to GPIO pins 2–5 on the Raspberry Pi Pico. Treat these LEDs as the 4 bits of a binary number. Start with the value 0001 (only the rightmost LED is ON).
