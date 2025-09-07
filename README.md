@@ -128,6 +128,9 @@ For data reception, the software utilizes the UART1 receiver. When it reads inco
 
 Problem:
 You have 4 LEDs connected to GPIO pins 2–5 on the Raspberry Pi Pico. Treat these LEDs as the 4 bits of a binary number. Start with the value 0001 (only the rightmost LED is ON).
+
 Button A: Each press shifts the LED pattern left (<<) so the next LED lights up. When it reaches the last LED, wrap around to the first.
+
 Button B: Each press toggles (^) the rightmost LED ON/OFF without affecting the others.
+
 Use bitwise operators (|, &, ^, ~, <<, >>) to update and display the LED states.
